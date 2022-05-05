@@ -1,12 +1,10 @@
-name : Cypress CI
-
+name: Cypress CI
 on: [push]
-
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
     defaults:
-      run:
+      run: 
         working-directory: ./
     steps:
       - name: Checkout
